@@ -1,0 +1,17 @@
+ALGORITHM Insertion_Sort
+VAR
+    T : ARRAY_OF type[length];
+   i , j , k: INTEGER
+BEGIN
+    j=2
+    WHILE (j<= T.length)) DO
+        i=j-1
+        k=T[j]
+        WHILE ( i>0 and T[i]>k) DO
+            T[i+1]=T[i]
+             i=i-1
+        END_WHILE
+        T[i+1]=k
+        j=j+1
+    END_WHILE
+END
